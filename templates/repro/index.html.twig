@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Symfony UX #2427 reproduction{% endblock %}
+
+{% block body %}
+    <main style="max-width: 700px; margin: 60px auto; font-family: sans-serif;">
+        <h1>Symfony UX Autocomplete #2427</h1>
+
+        <p>
+            Type <code>coo</code>, select <strong>Cookies</strong>,
+            then inspect the remaining choices.
+        </p>
+
+        {{ form_start(form) }}
+            {{ form_row(form.foods) }}
+        {{ form_end(form) }}
+    </main>
+{% endblock %}
