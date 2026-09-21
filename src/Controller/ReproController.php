@@ -29,6 +29,7 @@ final class ReproController extends AbstractController
                 'multiple' => true,
                 'autocomplete' => true,
                 'autocomplete_url' => $this->generateUrl('app_foods_autocomplete'),
+                'preload' => false,
             ])
             ->getForm();
 
